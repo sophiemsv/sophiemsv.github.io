@@ -3,6 +3,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url(images/patt.png);
 }
 .container {
     width: 1200px;
@@ -30,4 +31,126 @@ body {
     float: left;
     padding-left: 15px;
     padding-right: 15px;
+}
+.header{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 25px 0;
+    height: 100px;
+}
+.menu{
+    position: relative;
+}
+.menu li {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+.menu a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #2c71b8;
+    border-left: 1px solid #2c71b8;
+    font-size: 21px;
+}
+.shipping a {
+    border-right: 1px solid #2c71b8;
+}
+.menu a:hover {
+    background-color: #2c71b8;
+    color: white;
+}
+.menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.logo {
+    margin-top: 7px;
+}
+nav ul:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+nav li:hover > .products {
+    visibility: visible;
+    opacity: 1;
+  }
+.products {
+    position: absolute;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    height: 315px;
+}
+.products li {
+    width: 200%;
+}
+.products a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    text-align: left;
+    line-height: 50px;
+    color: white;
+    background-color: #2c71b8;
+    font-size: 21px;
+    padding-left: 29px;
+}
+.products a:hover {
+    color: #2c71b8;
+    background-color: white;
+}
+.formsearch {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #2c71b8;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+.search {
+    text-decoration: none;
+    color: #2c71b8;
+    font-size: 21px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    width: 145px;
+    height: 30px;
+}
+.search::placeholder{
+    color: #2c71b8;
+    font-family: 'Roboto', sans-serif;
+}
+.blueback {
+    background-color: #2c71b8;
+    padding-top: 6.5px;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+.imgsearch {
+    display: block;
+    margin: 0 auto;
+    width: 14px;
+    height: 14px;
+}
+.cart {
+    background-color: white;
+    margin-left: 260px;
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    padding-top: 10px;
+}
+.imgcart{
+    display: block;
+    width: 18px;
+    height: 20px;
+    margin: 0 auto;
 }
