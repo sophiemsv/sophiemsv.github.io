@@ -91,10 +91,10 @@ nav li:hover > .products {
 }
 .products a {
     display: block;
-    height: 50px;
+    height: 40px;
     text-decoration: none;
     text-align: left;
-    line-height: 50px;
+    line-height: 40px;
     color: white;
     background-color: #2c71b8;
     font-size: 21px;
@@ -104,6 +104,14 @@ nav li:hover > .products {
     color: #2c71b8;
     background-color: white;
 }
+.prodmain:hover .prodname {
+    background-color: #2c71b8;
+    color: white;
+}
+.rowsearch{
+    overflow: hidden;
+    padding: 0;
+}
 .formsearch {
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid #2c71b8;
@@ -112,7 +120,6 @@ nav li:hover > .products {
     padding: 5px;
     float: left;
     margin-top: 7px;
-    margin-left: 20px;
 }
 .search {
     text-decoration: none;
@@ -142,11 +149,13 @@ nav li:hover > .products {
 }
 .cart {
     background-color: white;
-    margin-left: 260px;
+    margin-top: 7px;
     width: 40px;
     height: 40px;
     margin-top: 7px;
+    margin-left: 30px;
     padding-top: 10px;
+    float: left;
 }
 .imgcart{
     display: block;
