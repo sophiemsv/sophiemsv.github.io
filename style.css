@@ -152,10 +152,10 @@ nav li:hover > .products {
     height: 14px;
 }
 .cartdiv {
-    width: 51px;
+    width: 40px;
     height: 51px;
     margin-top: -6px;
-    margin-left: 19px;
+    margin-left: 30px;
     float: left;
     position: relative;
 }
@@ -180,7 +180,7 @@ nav li:hover > .products {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: -11px;
     text-align: center;
     line-height: 20px;
