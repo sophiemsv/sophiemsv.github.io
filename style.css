@@ -272,8 +272,22 @@ nav li:hover > .products {
     margin-top: 32px;
     margin-bottom: 27px;
 }
-.checkbox {
+
+.filter label::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
     float: left;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + label:before {
+    background-color: white;
 }
 .category {
     margin-top: 24px;
