@@ -452,6 +452,12 @@ input[type="checkbox"]:checked + label:before {
     background-repeat: no-repeat;
     background-position: center center;
 }
+.like:active {
+    background-image: url(images/icon7.png);
+    background-color: #2c71b8;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 .description {
     padding: 15px;
     color: white;
