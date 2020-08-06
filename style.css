@@ -194,41 +194,39 @@ nav li:hover > .products {
     font-size: 12px;
 }
 .slider { 
-    height: 400px;
+    /* height: 400px; */
     background-color: rgba(0, 0, 0, 0.25);
     border-bottom: 1px solid white;
 }
-.slideshow {
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
-.slide {
+.slideshow > div {
     font-size: 100px;
     color: white;
     text-align: center;
     line-height: 400px;
-    /*display: none;*/
 }
-
+ 
 .prev, .next {
-    cursor: pointer;
     position: absolute;
-    top: 50%;
-    margin-top: -25px;
+    top: 35%;
     width: 25px;
     margin-left: 15px;
     margin-right: 15px;
     height: 50px;
+    z-index: 5;
 }
 .next {
-    right: 0;
+    right: 15%;
     background-image: url(images/right.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .prev {
-    left: 0;
+    left: 15%;
     background-image: url(images/left.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .mainpart {
     width: 1200px;
     margin: 0 auto;

@@ -1,3 +1,4 @@
+//add to cart
 let productsCount = document.getElementById("products-count")
 
 let addToCartButtons = document.querySelectorAll(".addtocart")
@@ -8,3 +9,11 @@ for(let i=0; i < addToCartButtons.length;i++) {
     })
 }
 
+//slider
+$('.slideshow').slick({
+    prevArrow: $('.prev'),
+    nextArrow: $('.next')
+})
+
+
+ 
