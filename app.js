@@ -94,3 +94,8 @@ for(i = 0; i < decrementButtons.length; i++){
     })
     
 }
+
+//AOS
+
+
+
