@@ -55,4 +55,42 @@ modal.addEventListener("click", function(e) {
         closeModal()
     }
 })
-  
+
+//quantity of products
+
+let decrementButtons = document.querySelectorAll(".decrement-button");
+let incrementButtons = document.querySelectorAll(".increment-button");
+let productsQuantity = document.querySelectorAll(".quantity-input");
+let minCount = 1;
+let maxCount = 5;
+
+for (let i = 0; i < productsQuantity.value; i++){
+    let currentCount = +productsQuantity[i].value;
+    toggleButtonState(currentCount,decrementButtons[i],incrementButtons[i])
+}
+
+function toggleButtonState(count,decrementButton,incrementButton){
+    decrementButton.disabled = count <= minCount;
+    incrementButton.disabled = count >= maxCount
+}
+
+for (let i = 0; i < incrementButtons.length; i++){
+    incrementButtons[i].addEventListener("click", function() {
+        let currentCount = +productsQuantity[i].value;
+        let nextCount = currentCount + 1;
+        productsQuantity[i].value = nextCount;
+    
+        toggleButtonState(nextCount,decrementButtons[i],incrementButtons[i])
+    })
+} 
+
+for(i = 0; i < decrementButtons.length; i++){
+    decrementButtons[i].addEventListener("click", function() {
+        let currentCount = +productsQuantity[i].value;
+        let nextCount = currentCount - 1;
+        productsQuantity[i].value = nextCount;
+    
+        toggleButtonState(nextCount,decrementButtons[i],incrementButtons[i])
+    })
+    
+}
